@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 43 - P e s o</title>
+</head>
+<body>
+    <script>
+         var hanna = {
+             nombre: 'Hanna',
+             apellido: 'Anaya',
+             edad: 18,
+             peso: 51
+         }
+
+         console.log(`Al principio del año ${hanna.nombre} pesa ${hanna.peso}kg`)
+
+         const INCREMENTO_DE_PESO = 0.2
+         const DIAS_DEL_AÑO = 365
+
+         function aumentarDePeso(persona) {
+             return persona.peso += INCREMENTO_DE_PESO
+         }
+         function adelgazar(persona) {
+             return persona.peso -= INCREMENTO_DE_PESO
+         }
+        
+        //  const aumentarDePeso = persona => persona.peso += INCREMENTO_DE_PESO
+        //  const adelgazar = persona => persona.peso -= INCREMENTO_DE_PESO
+
+         for (var i = 1; i <= DIAS_DEL_AÑO ; i++) {
+            var random = Math.random()
+
+            if (random < 0.25) {
+                aumentarDePeso(hanna)
+            } else if (random < 0.5) {
+                adelgazar(hanna)
+            }
+         }
+         console.log(`Al final del año ${hanna.nombre} pesa ${hanna.peso.toFixed(2)}kg`)
+    </script>
+</body>
+</html>

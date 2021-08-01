@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de imagenes</title>
+</head>
+<body>
+    <center>
+        <br>
+        <script languaje="javascript">
+            function Swimages (image, newimage) {
+                if(document.images) {
+                    eval("document." + image + ".src=\""  + newimage + "\";");
+                }
+            }
+        </script>
+
+        <a nohref="" onmouseover="Swimages('images[0]', './imas/tenor1.gif');
+        return true" onmouseout="Swimages('MI IMAGEN', './imas/tenor.gif')">
+            <img src="./imas/tenor.gif" name="MI IMAGEN">
+        </a>
+        
+    </center>
+</body>
+</html>

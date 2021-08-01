@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio DOM </title>
+</head>
+
+<style>
+    #adicional_oculto {display: none;}
+
+    #obj2 {display: none;}
+</style>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed
+        mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat
+        congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante,
+        ornare id, aliquam vitae, ultrices porttitor, pede.
+        <br>
+        <br>
+        <span id="adicional_oculto">
+            Nullam sit amet nisl elementum elit convallis malesuada. Phasellus
+            magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis
+            eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non
+            dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis
+            scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec
+            arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean
+            vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent id metus.
+        </span>
+    </p>
+    <a href="javascript:document.getElementById('adicional_oculto').style.display='block'; void0">Seguir leyendo</a>
+
+    <p id="obj1">
+        Para usar este método, primero tenemos que identificar el objeto y luego establecer su propiedad, mediante un evento.
+        La manera más sencilla de identificarlo es mediante un identificador ID, que debe ser único.
+        Ejemplo de un bloque de texto con el identificador "obj1".
+    </p>
+    <p id="obj2">
+        Las funciones anteriores se pueden accionar con cualquier evento, puede ser al dar clic en un botón, un enlace, un contenedor, etc.
+        En la práctica no es necesario tanto código, podemos simplificarlo para usarlo en enlaces, botones o en eventos que se disparan de varias formas.
+        Por ejemplo el código para un enlace.
+    </p>
+    <a href="javascript:void(document.getElementById('obj2').style.display = 'block');">Mostrar</a>
+    <a href="javascript:void(document.getElementById('obj1').style.display = 'none');">Ocultar</a>
+
+    <script src="texto.js" ></script>
+</body>
+</html>

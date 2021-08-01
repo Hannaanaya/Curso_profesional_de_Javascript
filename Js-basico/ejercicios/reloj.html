@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function horaReloj() {
+            momentoActual = new Date();
+            hora = momentoActual.getHours()
+            minuto = momentoActual.getMinutes()
+            segundo = momentoActual.getSeconds()
+
+            if (hora < 10 ){
+      hora = "0" + hora
+    }
+     if (minuto < 10 ){
+      minuto = "0" + minuto
+    }
+    if (segundo < 10 ){
+      segundo = "0" + segundo
+    }
+
+    imprimirHora =  " " + hora + ":" + minuto + ":" + segundo;
+
+    document.getElementById('reloj').value = horaImprimible
+
+    timeout = setTimeout("horaReloj()",1000)
+        }
+    </script>
+
+</head>
+<body>
+    <center>
+        <h3>
+            <font color="blue">Fecha de hoy</font>
+        </h3>
+
+        <script>
+var hoy = new Date();
+dia = hoy.getDate();
+mes = hoy.getMonth();
+year = hoy.getUTCFullYear();
+
+if (mes == "0") convertir_mes = "Enero";
+else if (mes == "1") convertir_mes = "Febrero";
+else if (mes == "2") convertir_mes = "Marzo";
+else if (mes == "3") convertir_mes = "Abril";
+else if (mes == "4") convertir_mes = "Mayo";
+else if (mes == "5") convertir_mes = "Junio";
+else if (mes == "6") convertir_mes = "Julio";
+else if (mes == "7") convertir_mes = "Agosto";
+else if (mes == "8") convertir_mes = "Septiembre";
+else if (mes == "9") convertir_mes = "Octubre";
+else if (mes == "10") convertir_mes = "Noviembre";
+else convertir_mes = "Diciembre";
+document.write("<H3>" + "Hoy es "+ dia + " de " + convertir_mes + " de " + year + "</H3>");
+        </script>
+
+        <center>
+            <h3>
+                <font color="blue">Visualización de la hora actual</font>
+            </h3>
+            <form name="clock">
+                <input id="reloj" size="13">
+            </form>
+        </center>
+    </center>
+    <!-- <script src="reloj.js" ></script> -->
+</body>
+</html>

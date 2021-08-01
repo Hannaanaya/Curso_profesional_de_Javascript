@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado</title>
+</head>
+<body>
+    <script>
+        var face0 = new Image()
+        face0.src="d1.gif"
+        var face1 = new Image()
+        face1.src="d2.gif"
+        var face2 = new Image()
+        face2.src="d3.gif"
+        var face3 = new Image()
+        face3.src="d4.gif"
+        var face4 = new Image()
+        face4.src="d5.gif"
+        var face5 = new Image()
+        face5.src="d6.gif"
+    </script>
+
+    <img src="https://www.uv.es/mplac/LaNau/4_Javascript/Ejercicios/d1.gif" name="mydice">
+    <form>
+        <input type="button" value="Lanza el dado!" onclick="dado">
+    </form>
+    <script>
+        function dado() {
+            var randomdice=Math.round(Math.random()*5)
+            document.images["mydice"].src= eval("face" + randomdice + ".src")
+        }
+    </script>
+</body>
+</html>

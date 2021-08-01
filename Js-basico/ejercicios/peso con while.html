@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 43</title>
+</head>
+<body>
+    <script>
+    var hanna = {
+    nombre: 'Hanna',
+    apellido: 'Anaya',
+    edad: 18,
+    peso: 51
+}
+
+console.log(`Al inicio del año ${hanna.nombre} pesa ${hanna.peso}kg`)
+
+
+// function aumentarDePeso (persona) {
+//     return persona.peso += 200
+// }
+
+const INCREMENTAR_DE_PESO = 0.3
+const DIAZ_DEL_AÑO = 365
+
+const aumentarDePeso = persona => persona.peso += INCREMENTAR_DE_PESO
+const adelgazar = persona => persona.peso -= INCREMENTAR_DE_PESO
+const comeMucho = () => Math.random() < 0.3
+const realizaDeporte = () => Math.random() < 0.4
+
+var META = hanna.peso - 3
+var dias = 0
+
+while (hanna.peso > META) {
+    if (comeMucho()) {
+        aumentarDePeso(hanna)
+    }
+    if (realizaDeporte()) {
+        adelgazar(hanna)
+    }
+    dias += 1
+}
+
+console.log(`Al final del año ${hanna.nombre} pesa ${hanna.peso.toFixed(2)} kg`)
+console.log(`Han pasado ${dias} díaz hasta que ${hanna.nombre} adelgazó 3k`)
+
+
+    </script>
+</body>
+</html>

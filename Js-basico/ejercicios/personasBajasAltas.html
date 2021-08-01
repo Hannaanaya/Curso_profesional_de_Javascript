@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alturas</title>
+</head>
+<body>
+    <script>
+       var hanna = {
+    nombre: 'Hanna',
+    apellido:'Anaya',
+    altura: 1.56
+}
+
+var alan = {
+    nombre: 'Alan',
+    apellido:'Perez',
+    altura: 1.72
+}
+
+var martin = {
+    nombre: 'Martín',
+    apellido:'Gomez',
+    altura: 1.67
+}
+
+var dario = {
+    nombre: 'Dario',
+    apellido:'Juarez',
+    altura: 1.71
+}
+
+var vicky = {
+    nombre: 'Vicky',
+    apellido:'Zapata',
+    altura: 1.56
+}
+
+var adriana = {
+    nombre: 'Adriana',
+    apellido:'Hernandez',
+    altura: 1.54
+}
+
+var ALTURA_MAS_ALTA = 1.7
+const esAlta = ({ altura }) => altura >= ALTURA_MAS_ALTA
+const esBaja = ({ altura }) => altura <= ALTURA_MAS_ALTA
+
+function imprimirSiEsAlta(persona) {
+    if (esAlta(persona)) {
+    console.log(`${persona.nombre} es una persona alta`)
+    } else {
+    console.log(`${persona.nombre} es una persona baja`)
+ }   
+} 
+
+function altura(persona) {
+    if (esAlta(persona)) {
+        console.log(`${persona.nombre} mide ${persona.altura}`)
+    } else if (esBaja(persona)) {
+        console.log(`${persona.nombre} mide ${persona.altura}`)
+    }
+}
+    </script>
+        
+</body>
+</html>
