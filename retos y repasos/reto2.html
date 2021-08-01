@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2</title>
+</head>
+<body>
+    <script>
+        function  Persona(nombre, apellido, altura) {
+    this.nombre = nombre
+    this.apellido = apellido
+    this.altura = altura
+}
+
+Persona.prototype.saludar = function () {
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+}
+
+Persona.prototype.soyAlto = function () {
+	if (this.altura >= 1.8) {
+		console.log(`${this.nombre} es alto`)
+	} else {
+		console.log('no es alto')
+	}
+}
+
+var hanna = new Persona('Hanna', 'Anaya', 1.56)
+var erika = new Persona('Erika', 'Luna', 1.71)
+var arturo = new Persona('Arturo', 'Vega', 1.82)
+var martin = new Persona('Martín', 'Perez', 1.92)
+var evelyn = new Persona('Evelyn', 'Martínez', 1.76)
+var klaus = new Persona('Klaus', 'Euterford', 1.85)
+var lorena = new Persona('Lorena', 'Marín', 1.80)
+var lucas = new Persona('Lucas', 'Corona', 1.77)
+
+    </script>
+</body>
+</html>

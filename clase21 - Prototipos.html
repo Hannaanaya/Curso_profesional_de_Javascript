@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipos</title>
+</head>
+<body>
+    <script>
+        function  Persona(nombre, apellido) {
+    this.nombre = nombre
+    this.apellido = apellido
+    this.edad = 20
+}
+
+Persona.prototype.saludar = function () {
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+}
+
+var hanna = new Persona('Hanna', 'Anaya')
+var erika = new Persona('Erika', 'Luna')
+var arturo = new Persona('Arturo', 'Martínez')
+    </script>
+</body>
+</html>

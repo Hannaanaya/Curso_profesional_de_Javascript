@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto de clase</title>
+</head>
+<body>
+    <script>
+
+var obj1 = {
+	obj2 : {
+		nombre: 'Hanna',
+		edad: 18
+	}
+}
+
+function saludar(obj) {
+	var {nombre, edad} = obj.obj2
+	console.log(`Hola, me llamo ${nombre} y tengo ${edad} años`)
+}
+saludar(obj1)
+
+    </script>
+</body>
+</html>

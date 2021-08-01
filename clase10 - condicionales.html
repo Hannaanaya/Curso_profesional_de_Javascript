@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+
+var hanna = {
+    nombre: 'Hanna',
+    apellido: 'Anaya',
+    edad: 18,
+    tecnica: true,
+    cocinera: false,
+    estudiante: true,
+    cantante: false,
+    guitarrista: false,
+    drone: false
+}
+
+function imprimirProfesiones(persona) {
+    console.log(`${persona.nombre} es:`)
+
+    if (persona.tecnica) {
+        console.log(`Técnica`)
+    }
+    if (persona.cocinera) {
+        console.log(`Cocinera`)
+    }
+    if (persona.estudiante) {
+        console.log(`Estudiante`)
+    }
+    if (persona.cantante) {
+        console.log(`Cantante`)
+    }
+    if (persona.guitarrista) {
+        console.log(`Guitarrista`)
+    }
+    if (persona.drone) {
+        console.log(`Drone`)
+    }
+}
+
+imprimirProfesiones(hanna)
+
+    </script>
+</body>
+</html>

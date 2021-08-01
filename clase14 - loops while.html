@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loos While</title>
+</head>
+<body>
+    <script>
+
+var hanna = {
+    nombre: 'Hanna',
+    apellido: 'Anaya',
+    edad: 18,
+    peso: 51
+}
+
+console.log(`Al inicio del año ${hanna.nombre} pesa ${hanna.peso}kg`)
+
+
+// function aumentarDePeso (persona) {
+//     return persona.peso += 200
+// }
+
+const INCREMENTO_PESO = 0.2
+const DIAS_DEL_AÑO = 365
+
+const aumentarDePeso = persona => persona.peso += INCREMENTO_PESO
+const adelgazar = persona => persona.peso -= INCREMENTO_PESO
+const comeMucho = () => Math.random () < 0.3
+const realizaDeporte = () => Math.random()  < 0.4
+
+
+const META = hanna.peso - 3 
+var dias = 0
+
+while (hanna.peso > META) {
+
+    if (comeMucho()) {
+        aumentarDePeso(hanna)
+    }
+    if (realizaDeporte()) {
+        adelgazar(hanna)
+    }
+    dias += 1
+}
+
+console.log(`Pasaron ${dias} días hasta que ${hanna.nombre} adelgazó 3kg`)
+
+    </script>
+</body>
+</html>
