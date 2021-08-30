@@ -1,0 +1,17 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "Proyecto personal del curso profesional de JS",
+  "main": "index.js",
+  "author": "Hanna Anaya",
+  "license": "ISC",
+  "keywords": [
+    "platzi"
+  ],
+  "scripts": {
+    "start":  "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
